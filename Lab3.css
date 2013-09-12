@@ -1,0 +1,21 @@
+*{margin:0; padding:0} 
+body{padding:1em; color:#555; font-family:verdana; text-align:center}
+
+p{padding:0.5em 0; font-weight:bold} 
+input:focus { outline:none; }
+
+input, button{padding:0.4em 0.3em;  margin:0.5em 0em}
+input{border:1px solid #999; border-left:1.05em solid #aaa;-moz-border-radius: 15px; border-radius: 15px;}
+
+.required{ border-left:1.05em solid #E8725C;} 
+
+#inputSymbol, .realtime, .historical{ 
+    padding:0.5em 0.5em; margin:0% 20%;  
+    text-align:left; 
+    border-bottom:1px solid #aaa
+}
+.realtime div, .historical div, .realtime div span, .historical div span{ display:inline-block }
+.realtime div, .historical div{width:45%}
+
+#date span, #closeValue span { display:block; color:#666; font-size:90%}
+.ui-datepicker { font-size:11px !important} 

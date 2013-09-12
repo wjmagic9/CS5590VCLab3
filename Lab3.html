@@ -1,0 +1,39 @@
+<h3>Google Search and Stock Trakcing System </h3> 
+<body>
+    <div id="google search">
+    <script>
+  (function() {
+    var cx = '006156941727675573674:rpjfe9g1fhy';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+ </script>
+ <gcse:search></gcse:search>
+</div>
+
+    <div id="inputSymbol"> 
+        <p>Enter Stock Name</p>
+        
+     <input id="txtSymbol" class="required" Placeholder="Symbol" /> 
+    <p>Select starting date: <input id="startDate" class="datePick required" type="text"  Placeholder="From" /></p>   
+    <p>Select ending date: <input id="endDate" class="datePick" type="text" Placeholder="To" /> </p> 
+        <button ID="submit">Submit</button> 
+    </div>     
+<div class="realtime"> 
+    <div><p>Name</p><span id="symbol"></span></div> 
+    <div><p>Current Bid</p><span id="bidRealtime"></span></div>  
+<div><p>Today Average Volume</p><span id="AverageDailyVolume"></span></div> 
+    <div><p>Today Change</p><span id="Change"></span></div> 
+    
+</div> 
+
+<div class="historical"> 
+    <div><p>Date</p><span id="date"></span></div>
+    <div><p>Price</p><span id="closeValue"></span></div> 
+</div> 
+</body>
